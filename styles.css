@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  font-family: "Oxygen", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  width: 300px;
+}
+
+#container {
+  background-color: #171717;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+}
+
+.great {
+  color: whitesmoke;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.total-tasks {
+  color: whitesmoke;
+}
+
+.addtask-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+#new-task {
+  padding: 10px;
+  width: 80%;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  background-color: #27272a;
+  color: white;
+}
+
+#add-task {
+  font-weight: 700;
+  padding: 10px;
+  width: 20%;
+  background-color: #27272a;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: opacity 0.3s ease;
+}
+
+#task-list {
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 13px;
+}
+
+#task-list li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #27272a;
+  color: whitesmoke;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+}
+
+#task-list li span {
+  flex-grow: 1;
+  margin-left: 10px;
+  word-break: break-all;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+button:not(#add-task) {
+  margin-left: 5px;
+  padding: 5px 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* .highlight {
+    background-color: #fed7aa;
+    transition: background-color 2s;
+} */
+#task-list::-webkit-scrollbar {
+  width: 2px;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+#task-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+#task-list::-webkit-scrollbar-thumb {
+  background: #888;
+}
+#task-list::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
